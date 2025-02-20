@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Filter Buttons -->
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="animated">Animated</button>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <!-- Images will be inserted dynamically -->
+    </div>
+
+    <!-- Load More Button -->
+    <div class="load-more-container">
+        <button id="loadMore">Load More</button>
+    </div>
+
+    <!-- Lightbox (hidden initially) -->
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-image" src="">
+        <p class="caption">A Beautiful Flower</p>
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
